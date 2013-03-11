@@ -20,7 +20,8 @@ $(window).load(function() {
 	
 	$("#about_page").delay(250).animate({"right":"5%",opacity:1},500);
 	$("#news_page").delay(250).animate({"right":"8%",opacity:1},500);
-	$("#build_1").delay(250).animate({"left":"1%",opacity:0.4},500);
+	
+	$("#build_1").delay(250).animate({"left":"1%"},500);
 	
 	$("#contactus_page").delay(280).animate({"right":"5%",opacity:1},500);
 	

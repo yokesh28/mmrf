@@ -4,7 +4,7 @@ if (isset($_REQUEST['email']))
 
 {
 	//send email
-	$to = 'info@mmrf.in';
+	$to = 'info@mmrf.in,annamalai.cs@gmail.com';
 
 $subject = 'Website Change Reqest';
 
