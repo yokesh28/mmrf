@@ -79,7 +79,7 @@
 						<li><label>Name<span>*</span></label><input type="text"
 							name="name" style="width: 180px;"></li>
 
-						<li>
+						<li style="margin-top: -10px;">
 							<ul class="add-sub">
 								<li><label>Address<span>*</span></label> <textArea
 										name="address" style="width: 180px; height: 72px;"></textArea>
@@ -91,9 +91,9 @@
 							</ul>
 						</li>
 
-						<li style="display: inline-block;"><label>Email <span>*</span></label><input
+						<li style="display: inline-block;margin-top: 16px;"><label>Email <span>*</span></label><input
 							type="email" name="email" style="width: 180px;"></li>
-						<li><label>Mobie No<span>*</span></label><input type="text"
+						<li style="margin-top: 0px"><label>Mobie No<span>*</span></label><input type="text"
 							name="mobile" style="width: 154px;"><label
 							style="width: 99px;">Phone No </label><input type="text"
 							name="pho_ex" style="width: 42px"><input type="text"
@@ -236,7 +236,7 @@
 		
 		$.ajax({
 			type : "post",
-			url : "/usercontroller/verifyUser",
+			url : "mail.php",
 			cache : false,
 			data : $('userForm').serialize(),
 			success : function(json) {
