@@ -33,57 +33,54 @@ Name:
 
 <tr>
 <td>Address:</td>
-<td>Coimbatore</td>
+<td>'.$_REQUEST['address'].'</td>
 </tr>
 
-<tr>
-<td>Address:</td>
-<td>Coimbatore</td>
-</tr>
+
 
 <tr>
 <td>Email:</td>
-<td>annamalai.cs@gmail.com</td>
+<td>'.$_REQUEST['email'].'</td>
 </tr>
 
 <tr>
 <td>MobileNo:</td>
-<td>7401062094</td>
+<td>'.$_REQUEST['mobile'].'</td>
 </tr>
 
 <tr>
 <td>Location:</td>
-<td>Cbe</td>
+<td>'.$_REQUEST['location'].'</td>
 </tr>
 
 <tr>
 <td>BulidArea:</td>
-<td>10,000 to 50,000</td>
+<td>'.$_REQUEST['bulid_area'].'</td>
 </tr>
 
 <tr>
 <td>City:</td>
-<td>Coimbatore</td>
+<td>'.$_REQUEST['city'].'</td>
 </tr>
 
 <tr>
 <td>Pincode:</td>
-<td>6420094</td>
+<td>'.$_REQUEST['pincode'].'</td>
 </tr>
 
 <tr>
 <td>Phone No:</td>
-<td>0422-245643</td>
+<td>'.$_REQUEST['phone'].'</td>
 </tr>
 
 <tr>
 <td>Budget:</td>
-<td>1,00,00000 to 3,00,00000</td>
+<td>'.$_REQUEST['budget'].'</td>
 </tr>
 
 <tr>
 <td>Post Enquiry:</td>
-<td>I will purchase </td>
+<td>'.$_REQUEST['enquiry'].' </td>
 </tr>
 </table>
 
