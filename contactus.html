@@ -103,7 +103,7 @@
 							name="location" style="width: 180px;"></li>
 						<li><label>BuildUp Area<span>*</span></label>
 							<div class="select" style="width: 200px;">
-								<select style="width: 200px;" name="build_area"><option>--Select--</option>
+								<select style="width: 200px;" name="build_area"><option value="">--Select--</option>
 
 
 
@@ -127,7 +127,7 @@
 
 							</div> <label style="width: 76px">Budget<span>*</span></label>
 							<div class="select" style="width: 128px">
-								<select style="width: 128px" name="budget"><option>--Select--</option>
+								<select style="width: 128px" name="budget"><option value="">--Select--</option>
 
 
 									<option value="Less than 60,00,000">Less than
@@ -166,9 +166,74 @@
 
 <script type="text/javascript" src="engine1/wowslider.js"></script>
 <script type="text/javascript" src="engine1/script.js"></script>
-<script>
+<script language="JavaScript">
 	function submitContact() {
 
+		var contactname=document.forms["contactus"]["name"].value;
+		var contactaddress=document.forms["contactus"]["address"].value;
+		var contactemail=document.forms["contactus"]["email"].value;
+		var atpos=contactemail.indexOf("@");
+		var dotpos=contactemail.lastIndexOf(".");
+		
+		var contactnumber = document.forms["contactus"]["mobile"].value;
+	       
+        var contactlocation = document.forms["contactus"]["location"].value;
+        
+        var contactarea=document.forms["contactus"]["build_area"].value;
+        var contactbudget=document.forms["contactus"]["budget"].value;
+		
+		if (contactname==null || contactname=="")
+		  {
+		  alert(" Name must be filled out");
+		  return false;
+		  }
+		else if(contactaddress==null || contactaddress=="")
+			{
+			
+			alert(" ContactAddress must be filled out");
+			  return false;
+			}
+
+		else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=contactemail.length)
+		  {
+			  alert("Not a valid e-mail address");
+			  return false;
+			  }
+		else if (contactnumber==null || contactnumber=="")
+	 	 {
+	 		 alert("MobileNo must be filled out");
+	 		 return false;
+	 	 }       
+
+		else if(isNaN(contactnumber)|| contactnumber.indexOf(" ")!=-1)
+		{
+	              			alert("Enter numeric value");
+				return false;
+	                }
+		else if (contactnumber.length > 10 || contactnumber.length < 10 )
+				{
+	                			alert("enter 10 characters"); 
+					return false;
+	          			 }
+		else if (contactlocation==null || contactlocation=="")
+		{
+			alert("Location must be filled out");
+			return false;
+			
+		}	
+		
+		else if(contactarea=="null" || contactarea=="")
+		  {
+		  alert("Please select a Bulid Area");
+		  return false;
+		  }
+		else if(contactbudget=="null" || contactbudget=="")
+		  {
+		  alert("Please select a Budget");
+		  return false;
+		  }
+		
+		
 		$.ajax({
 			type : "post",
 			url : "/usercontroller/verifyUser",
