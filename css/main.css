@@ -178,11 +178,11 @@ img {
 }
 
 .bx-prev {
-	background: url(../images/arrow.png) no-repeat bottom left !important;
+	background: url(../images/left.png) no-repeat bottom left !important;
 }
 
 .bx-next {
-	background: url(../images/arrow.png) no-repeat bottom right !important;
+	background: url(../images/right.png) no-repeat bottom right !important;
 }
 
 .bx-controls-direction a {
