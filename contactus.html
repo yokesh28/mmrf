@@ -74,7 +74,7 @@
 				</address>
 			</div>
 			<div class="enquiry">
-				<form name="contactus" id="contactus_form">
+				<form name="contactus" id="contactus_form"   onSubmit="return submitContact();">
 					<ul>
 						<li><label>Name<span>*</span></label><input type="text"
 							name="name" style="width: 180px;"></li>
@@ -152,11 +152,11 @@
 						<li><label style="width: auto">Post Your Enquiry</label><br
 							clear="all"> <textarea class="enquiry_text" name="enquiry"></textarea></li>
 						<li class="button"><input type="submit" name="submit"
-							onClick="js:return submitContact();" value="Sent Enquiry"><input
+							 value="Sent Enquiry"><input
 							type="button" name="reset" value="Reset"></li>
 					</ul>
 				</form>
-				<div id="error_text"></div>
+			
 			</div>
 		</div>
 	
@@ -241,21 +241,17 @@
 			cache : false,
 			data : $('#contactus_form').serialize(),
 			success : function(json) {
-				try {
-					var obj = jQuery.parseJSON(json);
-					alert(obj);
+					alert(json);
+				
 
-				} catch (e) {
-					alert('Exception while request..');
-				}
+			
 			},
-			error : function() {
-				alert('Error while request..');
-				return false;
-			}
+			
 		});
 
 		return false;
+
+		
 
 	}
 </script>
