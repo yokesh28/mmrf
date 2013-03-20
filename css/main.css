@@ -313,12 +313,12 @@ height: 700px;
 
 #ongoingprojecttabs a{
   position: relative;
-  background: #ddd;
+  background: #1E1E1E;
   background-image: linear-gradient(to bottom, #fff, #ddd);  
   padding: .7em 3.5em;
   float: left;
   text-decoration: none;
-  color: #444;
+  color:#FFFFFF;
   text-shadow: 0 1px 0 rgba(255,255,255,.8);
   border-radius: 5px 0 0 0;
   box-shadow: 0 2px 2px rgba(0,0,0,.4);
@@ -328,7 +328,7 @@ height: 700px;
 #ongoingprojecttabs a:hover::after,
 #ongoingprojecttabs a:focus,
 #ongoingprojecttabs a:focus::after{
-  background: #fff;
+  background: #77787B;
 }
 
 #ongoingprojecttabs a:focus{
@@ -343,8 +343,8 @@ height: 700px;
   right: -.5em;  
   bottom: 0;
   width: 1em;
-  background: #ddd;
-  background-image: linear-gradient(to bottom, #fff, #ddd);  
+  background: #1E1E1E;
+  background-image: linear-gradient(to bottom, #fff, #1E1E1E);  
   box-shadow: 2px 2px 2px rgba(0,0,0,.4);
   transform: skew(10deg);
   border-radius: 0 5px 0 0;  
@@ -352,7 +352,7 @@ height: 700px;
 
 #ongoingprojecttabs #current a,
 #ongoingprojecttabs #current a::after{
-  background: #fff;
+  background: #77787B;
   z-index: 3;
 }
 
