@@ -359,7 +359,7 @@ height: 700px;
 #ongoingprojectcontent
 {
 	width: 640px;
-    background: #fff;
+    background: #1e1e1e;
     padding: 2em;
     height: 220px;
     position: relative;
@@ -367,6 +367,55 @@ height: 700px;
     border-radius: 0 5px 5px 5px;
     box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
 }
+
+#ongoingprojects {
+	
+	
+	position: relative;
+
+left: 530px;
+top: 162px;
+}
+
+#ongoingprojects p
+{
+	width: 550px;
+margin: 30px;
+color: white;
+text-align: justify;
+}
+#ongoingprojects h2{
+	margin: 10px 30px;
+font-size: 22px;
+color: white;
+font-weight: bolder;
+}
+
+.ongoingprojects {
+	width: 959px;
+	height: 232px;
+	margin: 20px 0px;
+}
+
+.ongoingprojects div {
+	float: right;
+	margin: 26px 85px;
+}
+
+.ongoingprojects div h2 {
+	font-weight: bolder;
+}
+
+.ongoingprojects div p {
+	width: 500px;
+	font-size: 16px;
+	margin: 20px 0px;
+	line-height: 20px;
+}
+
+
+
+
 
 /*ends -ongoing tabs content*/
 
@@ -592,6 +641,9 @@ font-weight: bolder;
 	text-shadow: #333 1px 0;
 	cursor: pointer;
 }
+
+
+
 
 #error_text {
 	color: red;
