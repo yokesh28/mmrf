@@ -18,21 +18,37 @@
 <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
 <script type='text/javascript'
 	src="http://buildinternet.com/project/mosaic/1.0/js/mosaic.1.0.1.min.js"></script>
+	
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#ongoingprojectcontent div").hide(); // Initially hide all content
+    $("#ongoingprojecttabs li:first").attr("id","current"); // Activate first tab
+    $("#ongoingprojectcontent div:first").fadeIn(); // Show first tab content
+    
+    $('#ongoingprojecttabs a').click(function(e) {
+        e.preventDefault();
+        if ($(this).closest("li").attr("id") == "current"){ //detection for current tab
+         return       
+        }
+        else{             
+        $("#ongoingprojectcontent div").hide(); //Hide all content
+        $("#ongoingprojecttabs li").attr("id",""); //Reset id's
+        $(this).parent().attr("id","current"); // Activate this
+        $('#' + $(this).attr('name')).fadeIn(); // Show content for current tab
+        }
+    
+        
+   });
+});
+</script>	
+	
+	
+	
+	
+	
 <link rel="stylesheet" type="text/css" href="css/m.css">
-<script type='text/javascript'>
-	//<![CDATA[ 
-	$(window).load(function() {
-		$(document).ready(function($) {
 
-			$('.bar2').mosaic({
-				animation : 'slide',
-				hover_y : '0px'
-			});
-
-		})
-
-	});//]]>
-</script>
 <!-- bxSlider CSS file -->
 <link href="js/jquery.bxslider.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="engine1/style.css" />
@@ -55,7 +71,7 @@
 		</a>
 		<!--logo-->
 
-		<img id="build_1" src="images/build1.png" width="854" height="601" style="opacity:0.4"/>
+		<img id="build_1" src="images/build1.png" width="854" height="601" style="opacity:0.4" />
 		<!--build 1-->
 		<div id="dwn_btn">
 			<a href="Sai.pdf" target="blank"><img src="images/dwn_btn.png"
@@ -66,80 +82,34 @@
 		<div id="nav_box">
 			<ul>
 				<li><a href="index.html">home</a></li>
-				<li><a href="aboutus.html">about us</a></li>
-				<li><a class="active" href="projects.html">projects</a></li>
+				<li><a  href="aboutus.html">about us</a></li>
+				<li><a href="projects.html">projects</a></li>
 				<li><a href="news.html">news</a></li>
 
-				<li><a href="careers.html">careers</a></li>
+				<li><a href="carrers.html">careers</a></li>
 				<li><a href="contactus.html">contact</a></li>
 			</ul>
 		</div>
 		<!--nav box-->
 
-		<div id="projects_page">
-			<div id="tabs">
-				<ul>
-					<li><a href="#tabs-1">Ongoing Projects</a></li>
-					<li><a href="#">//</a></li>
-					<li><a href="#tabs-2">Upcoming Projects</a></li>
-				</ul>
-			
-				<div id="tabs-1">
+		<div>
+			<ul id="ongoingprojecttabs">
+    <li><a href="#" class="current" name="tabone">One</a></li>
+    <li><a href="#" name="tabtwo">Two</a></li>
+    <li><a href="#" name="tabthree">Three</a></li>
+    <li><a href="#" name="tabfour">Four</a></li>    
+</ul>
 
-					<div class="list_project">
-						<div class="mosaic-block bar2">
-							<a href="ongoingprojects.html" class="mosaic-overlay"
-								style="display: inline; left: 0px; bottom: -115px; opacity: 0.8;">
-								<p>Sai Enclave </p>
-							</a>
-							<div class="mosaic-backdrop">
-								<img src="images/pro_list.gif" />
-
-							</div>
-
-						</div>
-						<span>OMR, Chennai</span>
-					</div>
-					<div class="list_project">
-						<div class="mosaic-block bar2">
-							<a href="#" class="mosaic-overlay"
-								style="display: inline; left: 0px; bottom: -115px; opacity: 0.8;">
-								<p>Padur Residence </p>
-							</a>
-							<div class="mosaic-backdrop">
-								<img src="images/on2.gif" />
-
-							</div>
-
-						</div>
-						<span>Padur, Chennai</span>
-					</div>
-				</div>
-					<div id="tabs-2">
-
-					<div class="list_project">
-						<div class="mosaic-block bar2">
-							<a href="#" class="mosaic-overlay"
-								style="display: inline; left: 0px; bottom: -115px; opacity: 0.8;">
-								<p>Township coming up at Ottiyambakkam</p>
-							</a>
-							<div class="mosaic-backdrop">
-								<img src="images/ot.jpg" />
-
-							</div>
-
-						</div>
-						<span>Ottiyambakkam, Chennai</span>
-					</div>
-
-
-
-				</div>
-			</div>
-		</div>
-	
-	<div class="footer">Copyright © 2013 Ltd. All rights reserved.</div>
+<div id="ongoingprojectcontent"> 
+    <div id="tabone">...</div>
+    <div id="tabtwo">...</div>
+    <div id="tabthree">...</div>
+    <div id="tabfour">...</div>
+</div>
+	</div>	
+		<div class="footer">Copyright © 2013 Ltd. All rights reserved.</div>
 	</div>
+	
 	<!--wrap main-->
 </body>
 <script>
