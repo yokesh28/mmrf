@@ -358,7 +358,7 @@ height: 700px;
 
 #ongoingprojectcontent
 {
-	width: 640px;
+	width: 890px;
     background: #1e1e1e;
     padding: 2em;
     height: 220px;
@@ -373,13 +373,13 @@ height: 700px;
 	
 	position: relative;
 
-left: 530px;
+left: 340px;
 top: 162px;
 }
 
 #ongoingprojects p
 {
-	width: 550px;
+	
 margin: 30px;
 color: white;
 text-align: justify;
