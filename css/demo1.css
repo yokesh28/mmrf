@@ -52,11 +52,11 @@ body{
 	background: #e0e3ec url(../images/bg.png) repeat top left;
 	font-weight: 400;
 	font-size: 15px;
-	color: #593741;
+	color: #fff;
 	overflow-y: scroll;
 }
 a{
-	color:  #EE3124;;
+	color:  white;
 	text-decoration: none;
 }
 .container{

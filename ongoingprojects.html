@@ -10,39 +10,16 @@
 <!--[if lt IE 9]>
 <link href="css/ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->
-<script type="text/javascript" src="engine1/jquery.js"></script>
-<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
-<script type="text/javascript" src="js/selectivizr.js"></script>
+
+<script type="text/javascript" src="http://bobcravens.com/demos/_common/scripts/jquery-1.4.1.js"></script>
+
+<script type="text/javascript" src="http://bobcravens.com/demos/_common/scripts/jquery-ui-1.7.2.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
-<script type='text/javascript'
-	src="http://buildinternet.com/project/mosaic/1.0/js/mosaic.1.0.1.min.js"></script>
-	
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script>
-$(document).ready(function() {
-    $("#ongoingprojectcontent div").hide(); // Initially hide all content
-    $("#ongoingprojecttabs li:first").attr("id","current"); // Activate first tab
-    $("#ongoingprojectcontent div:first").fadeIn(); // Show first tab content
-    
-    $('#ongoingprojecttabs a').click(function(e) {
-        e.preventDefault();
-        if ($(this).closest("li").attr("id") == "current"){ //detection for current tab
-         return       
-        }
-        else{             
-        $("#ongoingprojectcontent div").hide(); //Hide all content
-        $("#ongoingprojecttabs li").attr("id",""); //Reset id's
-        $(this).parent().attr("id","current"); // Activate this
-        $('#' + $(this).attr('name')).fadeIn(); // Show content for current tab
-        }
-    
-        
-   });
-});
-</script>	
-	
+
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+
 	
 	
 	
@@ -92,57 +69,37 @@ $(document).ready(function() {
 		</div>
 		<!--nav box-->
 
-		<div id="ongoingprojects">
-			<ul id="ongoingprojecttabs">
-    <li class="tab1"><a href="#"  name="tabone">Site Layout</a></li>
-    <li class="tab2"><a href="#" name="tabtwo">Techincal Specifications</a></li>
-    <li class="tab3"><a href="#" name="tabthree">Floor Plan</a></li>
-    <li class="tab4"><a href="#" name="tabfour">Booking Status</a></li>    
-</ul>
-               
-<div id="ongoingprojectcontent"> 
-    <div id="tabone" style="">
-    <p>Lorem ipsum sit amet
-        Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.
-        Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. Mauris turpis tortor, mollis non vulputate sit amet, rhoncus vitae purus.
-
-       Pellentesque habitant
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.  </p>
+		<div id="tabs1">
+    <ul>
+        <li class="tab1">
+            <a href="#a" >Site Layout</a>
+        </li>
+        <li class="tab2">
+            <a href="#b">Techinical Specifications</a>
+        </li>
+        <li class="tab3">
+            <a href="#c">Floor plan</a>
+        </li>
+        <li class="tab4">
+            <a href="#d">Booking Status</a>
+        </li>
+    </ul>
     
-    
+    <div id="a">
+    Content of A
     </div>
-    <div id="tabtwo" style="display: block;">
-    <h2>Lorem ipsum sit amet</h2>
-        <p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
-        <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. Mauris turpis tortor, mollis non vulputate sit amet, rhoncus vitae purus.</p>
-
-        <h3>Pellentesque habitant</h3>
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>  
-    
+    <div id="b">
+        Content of B
     </div>
-    <div id="tabthree" style="display: block;">
-    <h2>Lorem ipsum sit amet</h2>
-        <p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
-        <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. Mauris turpis tortor, mollis non vulputate sit amet, rhoncus vitae purus.</p>
-
-        <h3>Pellentesque habitant</h3>
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>  
-    
+    <div id="c">
+        Content of C
     </div>
-    <div id="tabfour" style="display: block;">
-    <h2>Lorem ipsum sit amet</h2>
-        <p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
-        <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. Mauris turpis tortor, mollis non vulputate sit amet, rhoncus vitae purus.</p>
-
-        <h3>Pellentesque habitant</h3>
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>  
-    
-    
-    
+    <div id="d">
+        Content of D
     </div>
+    
 </div>
-	</div>	
-	
+	<p class="css-vertical-text">Css Vertical Text</p>
 	
 	
 	
@@ -151,12 +108,11 @@ $(document).ready(function() {
 	</div>
 	
 	<!--wrap main-->
+	
 </body>
+
 <script>
-	$(function() {
-		$("#tabs").tabs();
-	});
+$('#tabs1').tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
+
 </script>
-<script type="text/javascript" src="engine1/wowslider.js"></script>
-<script type="text/javascript" src="engine1/script.js"></script>
 </html>

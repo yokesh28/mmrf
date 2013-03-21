@@ -162,7 +162,7 @@ height: 700px;
 
 .ui-tabs-active a {
 	color: white !important;
-	text-decoration: underline;
+	
 }
 
 #tabs ul.ui-tabs-nav li a {
@@ -295,185 +295,108 @@ height: 700px;
 	color: white;
 }
 
-.tab1{
+#tabs1 > ul > li.tab1{
 	
-  background: url(../images/11.PNG) no-repeat;
+	
+  background: url(../images/222.PNG) no-repeat;
   
 
-  float: left;
-  text-decoration: none;
-  color:#FFFFFF;
+  
 }
 
-.tab2{
+#tabs1 > ul > li.tab2{
 	
   
   background: url(../images/222.PNG) no-repeat;
   
 
-  float: left;
-  text-decoration: none;
-  color:#FFFFFF;
+  
 }
 
-.tab3{
+#tabs1 > ul > li.tab3{
 	
   
-  background: url(../images/333.PNG) no-repeat;
+  background: url(../images/222.PNG) no-repeat;
   
 
-  float: left;
-  text-decoration: none;
-  color:#FFFFFF;
+  
 }
 
-.tab4{
+#tabs1 > ul > li.tab4{
 	
   
-  background: url(../images/444.PNG) no-repeat;
+  background: url(../images/222.PNG) no-repeat;
   
  
-  float: left;
-  text-decoration: none;
-  color:#FFFFFF;
+  
 }
-
 
 /*start -ongoing tabs content*/
-#ongoingprojecttabs{
-  overflow: hidden;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+#tabs1 {
+	
+	
+	
 
-#ongoingprojecttabs li{
-  float: left;
-
-top: 6px;
-}
-.tab2 a{
-	padding: 7px 40px !important;
-}
-.tab4 a{
-	padding: 7px 34px !important;
-}
-#ongoingprojecttabs a{
-  position: relative;
-  padding: 7px 30px;
-  /*background: #1E1E1E;
- 
-  background-image: linear-gradient(to bottom, #fff, #ddd);  */
-  
-  
- /* padding: .7em 3.5em;*/
-  float: left;
-  text-decoration: none;
-  color:#FFFFFF;
- /* text-shadow: 0 1px 0 rgba(255,255,255,.8);
-  border-radius: 5px 0 0 0;
-  box-shadow: 0 2px 2px rgba(0,0,0,.4);*/
-}
-
-
-#current a{
-	color:red !important;
+position: relative;
+left: 680px;
+top: 125px;
+min-height: 293px;
+margin: 0 0 0 0px;
+padding: 20px;
+background-color: #1e1e1e;
+border: 1px solid #1e1e1e;
+width: 582px;
 }
 
 
 
 
-#ongoingprojecttabs a:hover,
-#ongoingprojecttabs a:hover::after,
-#ongoingprojecttabs a:focus,
-#ongoingprojecttabs a:focus::after{
- /* background: #77787B;*/
+
+
+
+.ui-tabs.ui-tabs-vertical {
+    padding: 0;
+    width: 42em;
 }
-
-#ongoingprojecttabs a:focus{
-  outline: 0;
+.ui-tabs.ui-tabs-vertical .ui-widget-header {
+    border: none;
 }
-
-#ongoingprojecttabs a::after{
-  content:'';
-  position:absolute;
-  z-index: 1;
-  top: 0;
-  right: -.5em;  
-  bottom: 0;
-  width: 1em;
-  /*background: #1E1E1E;*/
-  background-image: linear-gradient(to bottom, #fff, #1E1E1E);  
- /* box-shadow: 2px 2px 2px rgba(0,0,0,.4);*/
-  transform: skew(10deg);
-  border-radius: 0 5px 0 0;  
-}
-
-#ongoingprojecttabs #current a,
-#ongoingprojecttabs #current a::after{
- /* background: #77787B;*/
-  z-index: 3;
-
-
-}
-
-#ongoingprojectcontent
-{
-	width: 890px;
-    background: #1e1e1e;
-    padding: 2em;
-    height: 220px;
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav {
     position: relative;
-    z-index: 2;	
-    border-radius: 0 5px 5px 5px;
-    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+float: left;
+right: 240px;
+width: 237px;
 }
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li {
+    clear: left;
+    width: 100%;
+    
+    overflow: hidden;
+    position: relative;
+    right: -8px;
+    
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a {
+    display: block;
+    width: 100%;
+    padding: 12px 0px 10px 36px;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a:hover {
+    cursor: pointer;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 0.2em;
+    padding-bottom: 0;
+    
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li:last-child {
+    margin-bottom: 10px;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-panel {
+   position: relative;
+left: -233px;
 
-#ongoingprojects {
-	
-	
-	position: relative;
 
-left: 340px;
-top: 162px;
-}
-
-#ongoingprojects p
-{
-	
-margin: 30px;
-color: white;
-text-align: justify;
-}
-#ongoingprojects h2{
-	margin: 10px 30px;
-font-size: 22px;
-color: white;
-font-weight: bolder;
-}
-
-.ongoingprojects {
-	width: 959px;
-	height: 232px;
-	margin: 20px 0px;
-}
-
-.ongoingprojects div {
-	float: right;
-	margin: 26px 85px;
-}
-
-.ongoingprojects div h2 {
-	font-weight: bolder;
-}
-
-.ongoingprojects div p {
-	width: 500px;
-	font-size: 16px;
-	margin: 20px 0px;
-	line-height: 20px;
-}
 
 
 
@@ -481,7 +404,23 @@ font-weight: bolder;
 
 /*ends -ongoing tabs content*/
 
-
+.css-vertical-text {
+	color:#333;
+	border:0px solid red;
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform: rotate(90deg);
+	white-space:nowrap;
+	display:block;
+	bottom:0;
+	width:20px;
+	height:20px;
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+	font-size:24px;
+	font-weight:normal;
+	text-shadow: 0px 0px 1px #333;
+}
 
 
 #about_page {
