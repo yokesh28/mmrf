@@ -295,6 +295,48 @@ height: 700px;
 	color: white;
 }
 
+.tab1{
+	
+  background: url(../images/11.PNG) no-repeat;
+  
+
+  float: left;
+  text-decoration: none;
+  color:#FFFFFF;
+}
+
+.tab2{
+	
+  
+  background: url(../images/222.PNG) no-repeat;
+  
+
+  float: left;
+  text-decoration: none;
+  color:#FFFFFF;
+}
+
+.tab3{
+	
+  
+  background: url(../images/333.PNG) no-repeat;
+  
+
+  float: left;
+  text-decoration: none;
+  color:#FFFFFF;
+}
+
+.tab4{
+	
+  
+  background: url(../images/444.PNG) no-repeat;
+  
+ 
+  float: left;
+  text-decoration: none;
+  color:#FFFFFF;
+}
 
 
 /*start -ongoing tabs content*/
@@ -308,27 +350,45 @@ height: 700px;
 
 #ongoingprojecttabs li{
   float: left;
-  margin: 0 .5em 0 0;
-}
 
+top: 6px;
+}
+.tab2 a{
+	padding: 7px 40px !important;
+}
+.tab4 a{
+	padding: 7px 34px !important;
+}
 #ongoingprojecttabs a{
   position: relative;
-  background: #1E1E1E;
-  background-image: linear-gradient(to bottom, #fff, #ddd);  
-  padding: .7em 3.5em;
+  padding: 7px 30px;
+  /*background: #1E1E1E;
+ 
+  background-image: linear-gradient(to bottom, #fff, #ddd);  */
+  
+  
+ /* padding: .7em 3.5em;*/
   float: left;
   text-decoration: none;
   color:#FFFFFF;
-  text-shadow: 0 1px 0 rgba(255,255,255,.8);
+ /* text-shadow: 0 1px 0 rgba(255,255,255,.8);
   border-radius: 5px 0 0 0;
-  box-shadow: 0 2px 2px rgba(0,0,0,.4);
+  box-shadow: 0 2px 2px rgba(0,0,0,.4);*/
 }
+
+
+#current a{
+	color:red !important;
+}
+
+
+
 
 #ongoingprojecttabs a:hover,
 #ongoingprojecttabs a:hover::after,
 #ongoingprojecttabs a:focus,
 #ongoingprojecttabs a:focus::after{
-  background: #77787B;
+ /* background: #77787B;*/
 }
 
 #ongoingprojecttabs a:focus{
@@ -343,17 +403,19 @@ height: 700px;
   right: -.5em;  
   bottom: 0;
   width: 1em;
-  background: #1E1E1E;
+  /*background: #1E1E1E;*/
   background-image: linear-gradient(to bottom, #fff, #1E1E1E);  
-  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+ /* box-shadow: 2px 2px 2px rgba(0,0,0,.4);*/
   transform: skew(10deg);
   border-radius: 0 5px 0 0;  
 }
 
 #ongoingprojecttabs #current a,
 #ongoingprojecttabs #current a::after{
-  background: #77787B;
+ /* background: #77787B;*/
   z-index: 3;
+
+
 }
 
 #ongoingprojectcontent
